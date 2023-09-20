@@ -1,3 +1,2 @@
-import date_dif
+import date_main
 
-date_dif.diferenca_date_console()
