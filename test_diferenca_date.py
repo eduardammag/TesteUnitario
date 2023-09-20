@@ -1,11 +1,9 @@
 import unittest
 
 import unittest
-from datetime import datetime
-from io import StringIO
 from unittest.mock import patch
 
-from seu_codigo import diferenca_date_console, diferenca_date_arquivo
+from date_dif import diferenca_datgitte_console, diferenca_date_arquivo
 
 class TestDiferencaDates(unittest.TestCase):
 
