@@ -35,7 +35,9 @@ class TestDiferencaDates(unittest.TestCase):
         resultado = diferenca_date_arquivo('datas_temporarias.txt')
         self.assertEqual(resultado, 10)
 
-        
+"""
+Erros a partir do formato de data não compatível
+"""
 
 if __name__ == '__main__':
     unittest.main()
