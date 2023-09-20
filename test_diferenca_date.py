@@ -24,6 +24,15 @@ class TestDiferencaDates(unittest.TestCase):
         resultado = diferenca_date_arquivo('datas_temporarias.txt')
         self.assertEqual(resultado, 10)
 
+
+    def test_exec_main(self):
+        with patch('builtins.input', side_effect=["console"]):
+            with patch('builtins.input', side_effect=["10 de Setembro de 2023 - 20 de Setembro de 2023"]):
+                resultado = diferenca_date_console()
+                self.assertEqual(resultado, 10)
+
+        
+
 if __name__ == '__main__':
     unittest.main()
  
